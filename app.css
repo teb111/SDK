@@ -1,0 +1,20 @@
+.wobbling-8 {
+    width: 18px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    transform-origin: 50% -200%;
+    background: radial-gradient(at 30% 30%, #0000, #000a) rgba(31, 41, 59, 1);
+    animation: w8 1s cubic-bezier(0.5, -200, 0.5, 200) infinite;
+  }
+  .wobbling-8:before {
+    content: "";
+    position: absolute;
+    inset: -200% 8px 100%;
+    background: #ddd;
+  }
+  @keyframes w8 {
+    100% {
+      transform: rotate(1deg);
+    }
+  }
